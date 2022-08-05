@@ -1,5 +1,6 @@
-import 'package:ev_charge/screens/home/widgets/my_booking.dart';
-import 'package:ev_charge/screens/home/widgets/near_by_location.dart';
+import 'package:ev_charge/screens/home/sections/my_booking.dart';
+import 'package:ev_charge/screens/home/sections/near_by_location.dart';
+import 'package:ev_charge/screens/home/sections/nearby_serviece_list.dart';
 import 'package:ev_charge/screens/home/widgets/stack_Items.dart';
 import 'package:ev_charge/utilities/constans.dart';
 import 'package:ev_charge/utilities/spacing.dart';
@@ -61,7 +62,10 @@ class _HomeScreenState extends State<HomeScreen> {
                             },
                           ),
                           //custom widget for near by me section
-                          const NearByLocation()
+                          const NearByLocation(),
+                          //near by service station list
+                          RowHeading(heading: 'Near Service Station', onClick: (){}),
+                          const NearByServiceStaionList()
                         ],
                       )
                     ],

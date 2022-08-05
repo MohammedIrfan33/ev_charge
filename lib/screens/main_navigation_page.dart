@@ -1,6 +1,6 @@
 import 'package:ev_charge/main.dart';
 import 'package:ev_charge/screens/home/home_Screens.dart';
-import 'package:ev_charge/screens/home/widgets/my_booking.dart';
+import 'package:ev_charge/screens/home/sections/my_booking.dart';
 import 'package:ev_charge/screens/login/login_screen.dart';
 import 'package:ev_charge/screens/my_booking_details_screen/my_booking_details_screen.dart';
 import 'package:ev_charge/screens/signup/signup_screen.dart';
