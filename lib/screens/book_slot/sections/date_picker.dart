@@ -36,9 +36,14 @@ class _SelectDateState extends State<SelectDate> {
           hintText: 'Select Date',
           hintStyle: kHintStyle,
           prefixIconConstraints: const BoxConstraints(),
-          suffixIcon: const Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Icon(Icons.calendar_month),
+          suffixIcon:IconTheme(
+            data: const IconThemeData(
+             color: kSecondaryColor
+            ),
+            child:   const Padding(
+              padding: EdgeInsets.all(8.0),
+          child: Icon(Icons.calendar_month),
+        ),
           ),
           enabledBorder: border(),
           focusedBorder: border(),

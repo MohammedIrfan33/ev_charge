@@ -65,6 +65,11 @@ const kExtraSmallText = TextStyle(
   fontSize: 12.0,
   color: Colors.black
 );
+
+const kSmallText14 = TextStyle(
+    fontSize: 14,
+    color: Colors.black
+);
 const kExtraSmallBoldText = TextStyle(
     fontSize: 13.0,
     color: Colors.black,
