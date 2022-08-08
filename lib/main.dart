@@ -1,4 +1,3 @@
-import 'package:ev_charge/screens/on_charging_screen/my_booking_screen.dart';
 import 'package:ev_charge/screens/splash_screens.dart';
 import 'package:flutter/material.dart';
 

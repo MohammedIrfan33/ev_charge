@@ -1,6 +1,6 @@
 import 'package:ev_charge/components/buttons.dart';
 import 'package:ev_charge/components/green_outlined_button.dart';
-import 'package:ev_charge/screens/book_slot/book_slot_screen.dart';
+import 'package:ev_charge/screens/chargingStationScreens/screens/book_slot/book_slot_screen.dart';
 import 'package:ev_charge/utilities/spacing.dart';
 import 'package:flutter/material.dart';
 

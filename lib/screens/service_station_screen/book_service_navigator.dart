@@ -1,27 +1,21 @@
-import 'package:ev_charge/screens/chargingStationScreens/location_screen/location_screen.dart';
-import 'package:ev_charge/screens/chargingStationScreens/my_booking_details_screen/my_booking_details_screen.dart';
-import 'package:ev_charge/screens/home/home_Screens.dart';
-import 'package:ev_charge/screens/user/screens/user_profile_screen/user_profile_screen.dart';
+import 'package:ev_charge/screens/service_station_screen/screens/book_service_home/book_service_home.dart';
 import 'package:ev_charge/utilities/constans.dart';
 import 'package:flutter/material.dart';
 
 
-class MainPage extends StatefulWidget {
-  const MainPage({Key? key}) : super(key: key);
+class BookServiceNavigatorScreen extends StatefulWidget {
+  const BookServiceNavigatorScreen({Key? key}) : super(key: key);
 
   @override
-  State<MainPage> createState() => _MainPageState();
+  State<BookServiceNavigatorScreen> createState() => _BookServiceNavigatorScreenState();
 }
 
-class _MainPageState extends State<MainPage> {
+class _BookServiceNavigatorScreenState extends State<BookServiceNavigatorScreen> {
 
 
   //navigation screens list
   List screens = [
-    const HomeScreen(),
-    const LocationScreen(),
-    const MyBookingDetailsScreen(),
-    const ProfileScreen()
+    const ServiceHomeScreen()
   ];
 
   int selectedIndex = 0;
@@ -43,10 +37,6 @@ class _MainPageState extends State<MainPage> {
             icon: Icon(Icons.home_outlined),
             activeIcon: Icon(Icons.home),
             label: 'home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            label: 'login',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.bookmark_outline),
