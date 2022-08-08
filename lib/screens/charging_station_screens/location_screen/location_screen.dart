@@ -1,5 +1,5 @@
-import 'package:ev_charge/screens/chargingStationScreens/location_screen/sections/bottom_card_section.dart';
-import 'package:ev_charge/screens/chargingStationScreens/location_screen/sections/search_box_sections.dart';
+import 'package:ev_charge/screens/charging_station_screens//location_screen/sections/bottom_card_section.dart';
+import 'package:ev_charge/screens/charging_station_screens//location_screen/sections/search_box_sections.dart';
 import 'package:flutter/material.dart';
 
 

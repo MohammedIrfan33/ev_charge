@@ -1,9 +1,9 @@
 import 'package:bubble_tab_indicator/bubble_tab_indicator.dart';
 import 'package:ev_charge/components/custom_app_bar.dart';
 import 'package:ev_charge/components/searchBox.dart';
-import 'package:ev_charge/screens/chargingStationScreens/my_booking_details_screen/sections/tab_view/booked_tab.dart';
-import 'package:ev_charge/screens/chargingStationScreens/my_booking_details_screen/sections/tab_view/history_tab.dart';
-import 'package:ev_charge/screens/chargingStationScreens/my_booking_details_screen/sections/tab_view/on_going_tab.dart';
+import 'package:ev_charge/screens/charging_station_screens/my_booking_details_screen/sections/tab_view/booked_tab.dart';
+import 'package:ev_charge/screens/charging_station_screens/my_booking_details_screen/sections/tab_view/history_tab.dart';
+import 'package:ev_charge/screens/charging_station_screens/my_booking_details_screen/sections/tab_view/on_going_tab.dart';
 import 'package:ev_charge/utilities/constans.dart';
 import 'package:flutter/material.dart';
 

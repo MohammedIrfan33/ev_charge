@@ -3,7 +3,7 @@ import 'package:ev_charge/components/buttons.dart';
 import 'package:ev_charge/components/custom_app_bar.dart';
 import 'package:ev_charge/components/details_column_text.dart';
 import 'package:ev_charge/components/details_row_text.dart';
-import 'package:ev_charge/screens/chargingStationScreens/confirm_screen/confirm_screen.dart';
+import 'package:ev_charge/screens/charging_station_screens/confirm_screen/confirm_screen.dart';
 import 'package:ev_charge/utilities/constans.dart';
 import 'package:ev_charge/utilities/spacing.dart';
 import 'package:flutter/material.dart';

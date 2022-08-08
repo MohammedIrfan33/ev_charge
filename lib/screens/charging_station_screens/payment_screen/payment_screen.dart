@@ -1,7 +1,7 @@
 import 'package:ev_charge/components/buttons.dart';
 import 'package:ev_charge/components/custom_app_bar.dart';
-import 'package:ev_charge/screens/chargingStationScreens/payment_screen/Widget/animated_popup.dart';
-import 'package:ev_charge/screens/chargingStationScreens/payment_screen/Widget/text_field_container.dart';
+import 'package:ev_charge/screens/charging_station_screens/payment_screen/Widget/animated_popup.dart';
+import 'package:ev_charge/screens/charging_station_screens/payment_screen/Widget/text_field_container.dart';
 import 'package:ev_charge/utilities/constans.dart';
 import 'package:ev_charge/utilities/spacing.dart';
 import 'package:flutter/material.dart';

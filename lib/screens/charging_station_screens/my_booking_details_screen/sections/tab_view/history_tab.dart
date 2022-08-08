@@ -1,4 +1,4 @@
-import 'package:ev_charge/screens/chargingStationScreens/my_booking_details_screen/widgets/vehicle_details_card.dart';
+import 'package:ev_charge/screens/charging_station_screens/my_booking_details_screen/widgets/vehicle_details_card.dart';
 import 'package:flutter/material.dart';
 
 class HistoryTab extends StatelessWidget {

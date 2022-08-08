@@ -1,7 +1,6 @@
 import 'package:ev_charge/components/buttons.dart';
 import 'package:ev_charge/components/green_outlined_button.dart';
 import 'package:ev_charge/components/profile_avathar.dart';
-import 'package:ev_charge/utilities/constans.dart';
 import 'package:ev_charge/utilities/spacing.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

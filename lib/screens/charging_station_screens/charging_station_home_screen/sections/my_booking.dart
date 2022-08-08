@@ -1,6 +1,6 @@
 import 'package:ev_charge/components/row_icon_text.dart';
 import 'package:ev_charge/model/my_booking.dart';
-import 'package:ev_charge/screens/chargingStationScreens/on_charging_screen/my_booking_screen.dart';
+import 'package:ev_charge/screens/charging_station_screens/on_charging_screen/my_booking_screen.dart';
 import 'package:ev_charge/screens/home/widgets/main_card.dart';
 import 'package:ev_charge/servieces/myBooking.dart';
 import 'package:ev_charge/utilities/constans.dart';

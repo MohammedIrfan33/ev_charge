@@ -1,5 +1,5 @@
 import 'package:ev_charge/components/row_icon_text.dart';
-import 'package:ev_charge/screens/chargingStationScreens/location_screen/widgets/column_grey_text.dart';
+import 'package:ev_charge/screens/charging_station_screens/location_screen/widgets/column_grey_text.dart';
 import 'package:ev_charge/utilities/constans.dart';
 import 'package:ev_charge/utilities/spacing.dart';
 import 'package:flutter/material.dart';
