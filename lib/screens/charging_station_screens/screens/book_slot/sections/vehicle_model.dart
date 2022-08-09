@@ -1,5 +1,4 @@
-
-import 'package:ev_charge/screens/chargingStationScreens/screens/book_slot/Widgets/border.dart';
+import 'package:ev_charge/screens/charging_station_screens/screens/book_slot/Widgets/border.dart';
 import 'package:ev_charge/utilities/constans.dart';
 import 'package:flutter/material.dart';
 

@@ -1,5 +1,4 @@
-import 'package:ev_charge/screens/home/home_Screens.dart';
-import 'package:ev_charge/screens/main_navigation_page.dart';
+import 'package:ev_charge/screens/user/screens/login/login_screen.dart';
 import 'package:ev_charge/utilities/constans.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
@@ -29,7 +28,7 @@ class Splash extends StatelessWidget {
         splashIconSize: kSplashLogoSize,
         duration: 3000,
         splashTransition: SplashTransition.fadeTransition,
-        nextScreen: const MainPage(),
+        nextScreen: const LoginScreen(),
       ),
     );
   }

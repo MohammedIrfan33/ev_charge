@@ -1,12 +1,7 @@
-import 'package:ev_charge/components/buttons.dart';
-import 'package:ev_charge/components/green_outlined_button.dart';
-import 'package:ev_charge/screens/chargingStationScreens/sections/bottom_container/bottom_container.dart';
-import 'package:ev_charge/screens/chargingStationScreens/sections/bottom_section.dart';
-import 'package:ev_charge/screens/chargingStationScreens/sections/bottom_container/head_section.dart';
-import 'package:ev_charge/screens/chargingStationScreens/sections/bottom_container/tab_bar_section.dart';
-import 'package:ev_charge/screens/chargingStationScreens/sections/header_image_section.dart';
-import 'package:ev_charge/screens/chargingStationScreens/widgets/back_button.dart';
-import 'package:ev_charge/utilities/spacing.dart';
+
+import 'package:ev_charge/screens/charging_station_screens/sections/bottom_container/bottom_container.dart';
+import 'package:ev_charge/screens/charging_station_screens/sections/header_image_section.dart';
+import 'package:ev_charge/screens/charging_station_screens/widgets/back_button.dart';
 import 'package:flutter/material.dart';
 
 class ChargingStationsScreen extends StatelessWidget {

@@ -1,6 +1,6 @@
 import 'package:ev_charge/components/buttons.dart';
 import 'package:ev_charge/components/row_icon_text.dart';
-import 'package:ev_charge/screens/service_station_screen/screens/service_registration_screen/service_registration_screen.dart';
+import 'package:ev_charge/screens/service_station_screens/screens/service_registration_screen/service_registration_screen.dart';
 import 'package:ev_charge/utilities/constans.dart';
 import 'package:ev_charge/utilities/spacing.dart';
 import 'package:flutter/material.dart';

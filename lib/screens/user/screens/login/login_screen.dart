@@ -1,6 +1,10 @@
+import 'package:ev_charge/components/buttons.dart';
 import 'package:ev_charge/components/signup_login_text_button.dart';
 import 'package:ev_charge/components/text_field_box.dart';
-import 'package:ev_charge/screens/service_station_screen/book_service_navigator.dart';
+import 'package:ev_charge/screens/charging_station_screens/screens/view_book_details/view_charging_station_status.dart';
+import 'package:ev_charge/screens/main_navigation_page.dart';
+import 'package:ev_charge/screens/service_station_screens/screens/view_book_service/screens/view_service_stations_home.dart';
+import 'package:ev_charge/screens/user/screens/home/home_Screens.dart';
 import 'package:ev_charge/screens/user/screens/login/widgets/signin_buttons.dart';
 import 'package:ev_charge/screens/user/screens/signup/signup_screen.dart';
 import 'package:ev_charge/utilities/constans.dart';
@@ -63,7 +67,9 @@ class LoginScreen extends StatelessWidget {
                       child: SiginInWithButtons(
                         label: 'Charging Station',
                         icon: Icons.charging_station_rounded,
-                        onPress: () {},
+                        onPress: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>ViewChargingStationStatus()));
+                        },
                       ),
                     ),
                     horizontalSpace(20.0),
@@ -72,12 +78,16 @@ class LoginScreen extends StatelessWidget {
                         label: 'Service Station',
                         icon: Icons.car_repair_rounded,
                         onPress: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>const BookServiceNavigatorScreen()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>ViewServiceStationHome()));
                         },
                       ),
                     ),
                   ],
                 ),
+                verticalSpace(20),
+                Buttons(onPress: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>MainPage()));
+                }, label: 'Login as user'),
                 const Spacer(),
                 //custom Widget
                 SignupLoginTextButton(
@@ -88,7 +98,7 @@ class LoginScreen extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => SignUpScreen()));
+                            builder: (context) => const SignUpScreen()));
                   },
                 )
               ],

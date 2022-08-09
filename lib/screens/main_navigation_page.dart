@@ -1,6 +1,6 @@
-import 'package:ev_charge/screens/chargingStationScreens/location_screen/location_screen.dart';
-import 'package:ev_charge/screens/chargingStationScreens/my_booking_details_screen/my_booking_details_screen.dart';
-import 'package:ev_charge/screens/home/home_Screens.dart';
+import 'package:ev_charge/screens/charging_station_screens/screens/location_screen/location_screen.dart';
+import 'package:ev_charge/screens/charging_station_screens/screens/my_booking_details_screen/my_booking_details_screen.dart';
+import 'package:ev_charge/screens/user/screens/home/home_Screens.dart';
 import 'package:ev_charge/screens/user/screens/user_profile_screen/user_profile_screen.dart';
 import 'package:ev_charge/utilities/constans.dart';
 import 'package:flutter/material.dart';

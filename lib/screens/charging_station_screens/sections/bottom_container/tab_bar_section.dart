@@ -1,6 +1,6 @@
 import 'package:bubble_tab_indicator/bubble_tab_indicator.dart';
-import 'package:ev_charge/screens/chargingStationScreens/widgets/fullView.dart';
-import 'package:ev_charge/screens/chargingStationScreens/widgets/photos.dart';
+import 'package:ev_charge/screens/charging_station_screens/widgets/fullView.dart';
+import 'package:ev_charge/screens/charging_station_screens/widgets/photos.dart';
 import 'package:ev_charge/utilities/constans.dart';
 import 'package:flutter/material.dart';
 
