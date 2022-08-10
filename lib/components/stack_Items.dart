@@ -57,7 +57,7 @@ class StackItems extends StatelessWidget {
                   ),
                   Expanded(
                     flex: 1,
-                    child: isServiceStation ?  Icon(Icons.add,color: kSecondaryColor,size: 30,):kDirectionIcon,
+                    child: isServiceStation ?  IconButton(icon:Icon(Icons.add,color: kSecondaryColor,size: 30), onPressed: () {  },):kDirectionIcon,
                   ),
                 ],
               )

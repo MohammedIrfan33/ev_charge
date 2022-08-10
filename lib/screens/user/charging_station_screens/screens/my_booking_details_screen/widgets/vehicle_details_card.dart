@@ -1,22 +1,21 @@
-import 'package:ev_charge/components/details_row_text.dart';
 import 'package:ev_charge/components/green_outlined_button.dart';
 import 'package:ev_charge/components/row_icon_text.dart';
+import 'package:ev_charge/screens/user/charging_station_screens/view_slot_screen/view_slot_screen.dart';
 import 'package:ev_charge/utilities/constans.dart';
 import 'package:ev_charge/utilities/spacing.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
-class StatusBarContainer extends StatelessWidget {
-  const StatusBarContainer({
+class VehicleDetailsCard extends StatelessWidget {
+  const VehicleDetailsCard({
+    this.isBooked = false,
+    this.isHistory = false,
     Key? key,
-    this.isBooking = false,
-    this.isCompleted = false,
-    this.isPending = false,
   }) : super(key: key);
 
-  final bool isBooking;
-  final bool isPending;
-  final bool isCompleted;
+  final bool isBooked;
+  final bool isHistory;
 
   @override
   Widget build(BuildContext context) {
@@ -77,8 +76,12 @@ class StatusBarContainer extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              DetailsRowText(text: 'Booking  number', value: '234567'),
-
+              const RowIconText(
+                icon: kLocation,
+                text: 'location',
+                iconWidth: 10.0,
+                iconHeight: 10.0,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
@@ -101,9 +104,15 @@ class StatusBarContainer extends StatelessWidget {
               ),
 
               //percentage time remaining column
-              isCompleted || isBooking
-                  ? const SizedBox()
-                  : Column(
+              isBooked
+                  ? Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const RowIconText(icon: kPerson, text: '3km Away'),
+                        SvgPicture.asset('assets/images/map.svg')
+                      ],
+                    )
+                  :isHistory ? const SizedBox() :Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Text(
@@ -137,26 +146,31 @@ class StatusBarContainer extends StatelessWidget {
                       ],
                     ),
 
-              isBooking || isCompleted
-                  ? Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text('Date booked'),
-                        isBooking
-                            ? GreenOutlinedButton(
-                                onPress: () {
-                                },
-                                label: 'View Details',
-                                height: 35,
-                              )
-                            : const SizedBox(),
-                        isCompleted
-                            ?  const Text('status: completed', style: kSmallGreenBoldTextStyle)
+              isBooked || isHistory ?
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text('Date booked'),
+                  isBooked
+                      ?
+                  GreenOutlinedButton(
+                    onPress: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>const ViewSlotScreen()));
+                    },
 
-                            : const SizedBox(),
-                      ],
-                    )
-                  : const SizedBox(),
+                    label: 'View Details',
+                    height: 35,
+                  )
+                      : const SizedBox(),
+                  isHistory
+                      ? GreenOutlinedButton(
+                    onPress: () {},
+                    label: 'completed',
+                    height: 35,
+                  )
+                      : const SizedBox(),
+                ],
+              ): const SizedBox(),
             ],
           ),
         ),

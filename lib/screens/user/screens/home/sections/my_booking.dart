@@ -1,13 +1,13 @@
+import 'package:ev_charge/components/main_card.dart';
 import 'package:ev_charge/components/row_icon_text.dart';
 import 'package:ev_charge/model/my_booking.dart';
-import 'package:ev_charge/screens/charging_station_screens/screens/on_charging_screen/my_booking_screen.dart';
+import 'package:ev_charge/screens/user/charging_station_screens/screens/on_charging_screen/my_booking_screen.dart';
 import 'package:ev_charge/servieces/myBooking.dart';
 import 'package:ev_charge/utilities/constans.dart';
 import 'package:ev_charge/utilities/spacing.dart';
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
-import '../../../../../components/main_card.dart';
 
 class MyBooking extends StatefulWidget {
   const MyBooking({

@@ -12,15 +12,20 @@ class MainCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        width: 230,
-        padding: const EdgeInsets.all(8.0),
-        margin: const EdgeInsets.all(8.0),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(15.0),
-          color: Colors.white,
-        ),
-        child: cardChild
+    return GestureDetector(
+      onTap:(){
+        onClick();
+      },
+      child: Container(
+          width: 230,
+          padding: const EdgeInsets.all(8.0),
+          margin: const EdgeInsets.all(8.0),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(15.0),
+            color: Colors.white,
+          ),
+          child: cardChild
+      ),
     );
   }
 }

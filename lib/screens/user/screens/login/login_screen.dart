@@ -1,12 +1,11 @@
 import 'package:ev_charge/components/buttons.dart';
 import 'package:ev_charge/components/signup_login_text_button.dart';
 import 'package:ev_charge/components/text_field_box.dart';
-import 'package:ev_charge/screens/charging_station_screens/screens/view_book_details/view_charging_station_status.dart';
-import 'package:ev_charge/screens/main_navigation_page.dart';
-import 'package:ev_charge/screens/service_station_screens/screens/view_book_service/screens/view_service_stations_home.dart';
-import 'package:ev_charge/screens/user/screens/home/home_Screens.dart';
+import 'package:ev_charge/screens/user/main_navigation_page.dart';
 import 'package:ev_charge/screens/user/screens/login/widgets/signin_buttons.dart';
 import 'package:ev_charge/screens/user/screens/signup/signup_screen.dart';
+import 'package:ev_charge/screens/view_charging_sattion_book_details/view_charging_station_status.dart';
+import 'package:ev_charge/screens/view_service_station_book_details/screens/view_service_stations_home.dart';
 import 'package:ev_charge/utilities/constans.dart';
 import 'package:ev_charge/utilities/spacing.dart';
 import 'package:flutter/material.dart';
